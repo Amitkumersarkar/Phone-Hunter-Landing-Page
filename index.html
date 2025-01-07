@@ -16,13 +16,16 @@
     <!-- header section -->
     <header>
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 py-5 px-6">
                 <div class="flex-1">
                     <a class="btn btn-ghost text-xl">Hot Gadgets</a>
                 </div>
                 <div class="flex-none gap-2">
                     <div class="form-control">
                         <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    </div>
+                    <div>
+                        <button class="btn btn-secondary" onclick="loadAllPhones()">Search</button>
                     </div>
                 </div>
                 <div class="flex-none">
@@ -67,12 +70,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </nav>
     </header>
 
     <!-- main section -->
-    <main>
-
+    <main class="flex justify-center">
+        <div id="spinner">spinner</div>
     </main>
 
 
